@@ -1,0 +1,104 @@
+.admin-container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f4f6f9;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Sidebar Styling */
+.admin-sidebar {
+  width: 250px;
+  background-color: #2f3542;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  position: fixed; /* Cố định sidebar */
+  height: 100vh;
+}
+
+.admin-logo {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #444;
+}
+
+.admin-menu {
+  list-style: none;
+  padding: 20px 0;
+  flex: 1;
+}
+
+.admin-link {
+  display: flex;
+  align-items: center;
+  padding: 15px 25px;
+  color: #a4b0be;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 1rem;
+}
+
+.admin-link:hover, .admin-link.active {
+  background-color: #ff9f43;
+  color: #fff;
+}
+
+.admin-link .icon {
+  margin-right: 15px;
+}
+
+.admin-logout {
+  padding: 20px;
+  border-top: 1px solid #444;
+}
+
+.logout-btn {
+  width: 100%;
+  padding: 10px;
+  background: transparent;
+  border: 1px solid #ff4757;
+  color: #ff4757;
+  cursor: pointer;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-weight: bold;
+}
+
+.logout-btn:hover {
+  background: #ff4757;
+  color: white;
+}
+
+/* Main Content Styling */
+.admin-content {
+  flex: 1;
+  margin-left: 250px; /* Đẩy nội dung sang phải bằng chiều rộng sidebar */
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-header {
+  height: 70px;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.avatar {
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.admin-page-body {
+  padding: 30px;
+  flex: 1;
+  overflow-y: auto;
+}
